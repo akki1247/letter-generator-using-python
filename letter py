@@ -1,0 +1,38 @@
+# letter format generator
+letter = '''
+
+Address
+
+Date
+
+To
+
+rec Address
+
+Dear Sir/Madam:
+
+    Body
+
+Sincerely,
+
+ your name
+your post
+
+'''
+address = input("enter the address\n")
+date = input("enter the date in mm//dd//yy")
+To = input("enter the reci name:")
+rec_Address = input("enter the reciver adddress")
+Body = input("enter Body")
+your_name = input("enter the name")
+your_post = input("enter the post")
+
+letter = letter.replace("Address", address)
+letter = letter.replace("Date", date)
+letter = letter.replace("To", To)
+letter = letter.replace("rec Address", rec_Address)
+letter = letter.replace("Body", Body)
+letter = letter.replace("your name", your_name)
+letter = letter.replace("your post", your_post)
+
+print(letter)
